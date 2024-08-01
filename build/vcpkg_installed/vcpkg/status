@@ -1,0 +1,27 @@
+Package: vcpkg-cmake-config
+Version: 2022-02-06
+Port-Version: 1
+Architecture: x64-linux
+Multi-Arch: same
+Abi: a732cfd229f44557e8572ca7b87c783f0b52f27a96fd9829f1e802c43cf0d76e
+Status: install ok installed
+
+Package: vcpkg-cmake
+Version: 2023-05-04
+Architecture: x64-linux
+Multi-Arch: same
+Abi: a3b60642049504f62548064a723b7fcc49b9e7ab2fda4e36cbf230e33d887582
+Status: install ok installed
+
+Package: abseil
+Version: 20230802.1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-linux
+Multi-Arch: same
+Abi: b7109b6fb80856861ec34fc910e2fc4810f24499940ce813b4a4bc072e85706b
+Description: an open-source collection designed to augment the C++ standard library.
+    Abseil is an open-source collection of C++ library code designed to augment the C++ standard library. The Abseil library code is collected from Google's own C++ code base, has been extensively tested and used in production, and is the same code we depend on in our daily coding lives.
+    In some cases, Abseil provides pieces missing from the C++ standard; in others, Abseil provides alternatives to the standard for special needs we've found through usage in the Google code base. We denote those cases clearly within the library code we provide you.
+    Abseil is not meant to be a competitor to the standard library; we've just found that many of these utilities serve a purpose within our code base, and we now want to provide those resources to the C++ community as a whole.
+Status: install ok installed
+

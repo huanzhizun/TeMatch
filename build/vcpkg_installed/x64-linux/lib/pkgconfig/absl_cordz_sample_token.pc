@@ -1,0 +1,13 @@
+prefix=${pcfiledir}/../..
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: absl_cordz_sample_token
+Description: Abseil cordz_sample_token library
+URL: https://abseil.io/
+Version: 20230802
+
+Libs: "-L${libdir}" -labsl_cordz_sample_token
+Requires: absl_config = 20230802, absl_cordz_handle = 20230802, absl_cordz_info = 20230802
+Cflags: "-I${includedir}" -DNOMINMAX

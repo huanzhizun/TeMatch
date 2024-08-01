@@ -1,0 +1,11 @@
+/root/jiang/DTGraph_bak/build/CMakeFiles/edit_cache.dir
+/root/jiang/DTGraph_bak/build/CMakeFiles/rebuild_cache.dir
+/root/jiang/DTGraph_bak/build/src/CMakeFiles/graph_mining_without_thread_local.dir
+/root/jiang/DTGraph_bak/build/src/CMakeFiles/edit_cache.dir
+/root/jiang/DTGraph_bak/build/src/CMakeFiles/rebuild_cache.dir
+/root/jiang/DTGraph_bak/build/tianhe/CMakeFiles/baseline.dir
+/root/jiang/DTGraph_bak/build/tianhe/CMakeFiles/unit_test.dir
+/root/jiang/DTGraph_bak/build/tianhe/CMakeFiles/test.dir
+/root/jiang/DTGraph_bak/build/tianhe/CMakeFiles/memory.dir
+/root/jiang/DTGraph_bak/build/tianhe/CMakeFiles/edit_cache.dir
+/root/jiang/DTGraph_bak/build/tianhe/CMakeFiles/rebuild_cache.dir

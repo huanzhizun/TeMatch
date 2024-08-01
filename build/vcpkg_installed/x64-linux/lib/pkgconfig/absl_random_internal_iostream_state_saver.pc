@@ -1,0 +1,13 @@
+prefix=${pcfiledir}/../..
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: absl_random_internal_iostream_state_saver
+Description: Abseil random_internal_iostream_state_saver library
+URL: https://abseil.io/
+Version: 20230802
+
+Libs: "-L${libdir}"
+Requires: absl_int128 = 20230802, absl_type_traits = 20230802
+Cflags: "-I${includedir}" -DNOMINMAX
