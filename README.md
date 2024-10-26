@@ -49,7 +49,7 @@ Due to the large size of some datasets, the processing can be suspended.
 ```
 nohup python ../../evaluation.py > ../../test_log 2>&1 < /dev/null &
 ```
-evaluation.py中
+In evaluation.py
 
 ##### Change the model
 
