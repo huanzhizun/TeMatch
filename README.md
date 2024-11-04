@@ -50,10 +50,8 @@ In evaluation.py
 baseline stands for GraphPi；unit_test stands for Tematch
 ```python
 program = [
-        # ["test", test_pattern],
         ["baseline", baseline_pattern]
        #['unit_test', unit_pattern]
-        # ["memory", memory_pattern]
    ]
 ```
 ##### Change the dataset 
