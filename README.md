@@ -9,16 +9,16 @@ TeMatch is a high-performance framework designed to be compatible with any enume
 
 The experimental datasets are stored in the dataset folder and include askubuntu, bmc, collegeMsg, email, stackoverflow, superuser, wiki_talk, and orkut. The bmc dataset can be obtained from its official website, while askubuntu, collegeMsg, email, stackoverflow, superuser, wiki_talk, and orkut are available from the [Stanford Large Network Dataset Collection] (http://snap.stanford.edu./data/index.html)
 
-After downloading the source data, place it in the dataset folder and name it g.txt. Use dataConvert.py to process the temporal edges. Due to the large size of some datasets, processing may be paused. The input parameters for dataConvert.py include the dataset folder location and the conversion type. For example, for the orkut dataset, the input parameters are ./orkut/ and graph. Conversion types include graph and pattern. The graph conversion generates temporal.txt, node.txt, edge.data, and node.data.
+After downloading the source data, place it in the dataset folder and name it g.txt. Use dataConvert.py to process the temporal edges. Due to the large size of some datasets, processing may be paused. The input parameters for dataConvert.py include the dataset folder location and the conversion type. For example, for the stackoverflow dataset, the input parameters are ./stackoverflow/ and graph. Conversion types include graph and pattern. The graph conversion generates temporal.txt, node.txt, edge.data, and node.data.
 
 ```
 cd dataset
 
-nohup python dataConvert.py ./orkut/ graph > log_orkut.txt 2>&1 &
+nohup python dataConvert.py ./stackoverflow/ graph > log_stackoverflow.txt 2>&1 &
 ```
 After that, enter convert.ipynb in the dataset folder, change the dataset path, and run the code block to generate static.txt.
 ```python
-path = r'./orkut/'
+path = r'./stackoverflow/'
 ```
 
 ### Step 2 : Evaluate models
