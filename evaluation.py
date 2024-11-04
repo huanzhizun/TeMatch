@@ -149,11 +149,11 @@ if __name__ == '__main__':
         }
     }
 
-    test_pattern = r"average_matchTime: ([\d.]+) ans (\d+) tcsDP ([\d.]+) matchTime ([\d.]+) end2end ([\d.]+)"
+    #test_pattern = r"average_matchTime: ([\d.]+) ans (\d+) tcsDP ([\d.]+) matchTime ([\d.]+) end2end ([\d.]+)"
     baseline_pattern = r'ans (\d+) time ([\d.]+)'
     unit_pattern = r'root (\d+) ans (\d+) TCStime ([\d.]+) Matchtime ([\d.]+) tot ([\d.]+) end2end ([\d.]+)'
 
-    memory_pattern = r'total_mem MB: ([\d.]+)'
+    #memory_pattern = r'total_mem MB: ([\d.]+)'
 
 
     binroot = f"{script_dir}/build/bin/"
