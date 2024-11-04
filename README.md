@@ -1,7 +1,6 @@
 ## TeMatch
 
-TeMatch is a high-performance framework designed to be compatible with any enumeration-based solution for temporal subgraph matching. It introduces a novel topological representation of temporal constraints in the query graph, along with three temporal-aware subgraph matching algorithms that enable rapid constraint checking, early pruning, and efficient filtering. Extensive experiments show that TeMatch effectively leverages temporal information for early pruning, achieving a speedup of up to two orders of magnitude while being parallel-friendly, highly compatible, and yielding identical matching results.
-
+TeMatch is a high-performance framework for temporal subgraph matching. It features a novel topological representation of temporal constraints in the query graph, along with three temporal-aware subgraph matching algorithms that facilitate rapid constraint checking, early pruning, and efficient enumeration. Extensive experiments demonstrate that TeMatch effectively utilizes temporal information to reduce the search space, achieving speedups of up to two orders of magnitude while being parallel-friendly, highly compatible, and producing identical matching results.
 
 ## How to run 
 
