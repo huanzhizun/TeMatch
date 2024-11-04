@@ -20,11 +20,6 @@ After that, enter convert.ipynb in the dataset folder, change the dataset path, 
 ```python
 path = r'./orkut/'
 ```
-To enhance the experiment and provide a comparison with the StackOverflow dataset, we introduced a large dataset named Orkut. The original Orkut dataset lacks temporal attributes, so we generated random timestamps to simulate a temporal dataset. Notably, in the StackOverflow dataset, disregarding the temporal attribute of edges reveals that 70% of edges repeat between 1 to 10 times. To simulate similar conditions, we randomly repeated Orkut’s edges between 1 to 10 times. Given the large size of the Orkut dataset, repeating edges more than ten times would significantly increase the data volume, thereby extending the Baseline processing time, potentially indefinitely. Therefore, we limited repetitions to ten or fewer for this experiment.
-
-The solutions to other problems of building a dataset from scratch can be obtained by visiting the following website:
-
-[thu-pacman/GraphPi](https://github.com/thu-pacman/GraphPi?tab=readme-ov-file#step-0--load-the-dataset)
 
 ### Step 2 : Evaluate models
 
@@ -80,9 +75,9 @@ dataset = [
     
         # "wiki_talk/",
     
-        # "stackoverflow/",
+         "stackoverflow/",
 
-        "orkut/"
+        #"orkut/"
     ]
 ```
 
@@ -96,8 +91,8 @@ queryList = {
         #"askubuntu/":{1: [3], 2: [3,4], 3: [4], 4: [4], 5: [4,5], 6: [4,5], 7: [3,4,5], 8: [5,6]},
         #"superuser/":{1: [3], 2: [3,4], 3: [4], 4: [4], 5: [4,5], 6: [4,5], 8: [5,6]},
        #"wiki_talk/":{1: [3], 2: [3,4], 3: [4], 4: [4]}
-       #"stackoverflow/":{1: [3], 2: [3],  4: [4], 5: [5], 6: [5]}
-        "orkut/":{1: [3], 2: [3],  4: [4], 5: [5], 6: [5]}
+       "stackoverflow/":{1: [3], 2: [3],  4: [4], 5: [5], 6: [5]}
+        #"orkut/":{1: [3], 2: [3],  4: [4], 5: [5], 6: [5]}
     }
 ```
 The fourth parameter of the run function referenced in the main function can be used to adjust the number of threads. Please fill it in according to the actual situation; the timeout is set to 12 hours, but for some large datasets, the time may not be enough and it can be set to 1 week.
