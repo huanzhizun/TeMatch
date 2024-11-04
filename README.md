@@ -9,16 +9,16 @@ TeMatch is a high-performance framework designed to be compatible with any enume
 
 The experimental datasets are stored in the dataset folder and include askubuntu, bmc, collegeMsg, email, stackoverflow, superuser, wiki_talk, and orkut. The bmc dataset can be obtained from its official website, while askubuntu, collegeMsg, email, stackoverflow, superuser, wiki_talk, and orkut are available from the [Stanford Large Network Dataset Collection] (http://snap.stanford.edu./data/index.html)
 
-After downloading the source data, place it in the dataset folder and name it g.txt. Use dataConvert.py to process the temporal edges. Due to the large size of some datasets, processing may be paused. The input parameters for dataConvert.py include the dataset folder location and the conversion type. For example, for the stackoverflow dataset, the input parameters are ./stackoverflow/ and graph. Conversion types include graph and pattern. The graph conversion generates temporal.txt, node.txt, edge.data, and node.data.
+After downloading the source data, place it in the dataset folder and name it g.txt. Use dataConvert.py to process the temporal edges. Due to the large size of some datasets, processing may be paused. The input parameters for dataConvert.py include the dataset folder location and the conversion type. For example, for the bmc dataset, the input parameters are ./bmc/ and graph. Conversion types include graph and pattern. The graph conversion generates temporal.txt, node.txt, edge.data, and node.data.
 
 ```
 cd dataset
 
-nohup python dataConvert.py ./stackoverflow/ graph > log_stackoverflow.txt 2>&1 &
+nohup python dataConvert.py ./bmc/ graph > log_bmc.txt 2>&1 &
 ```
 After that, enter convert.ipynb in the dataset folder, change the dataset path, and run the code block to generate static.txt.
 ```python
-path = r'./stackoverflow/'
+path = r'./bmc/'
 ```
 
 ### Step 2 : Evaluate models
@@ -65,7 +65,7 @@ dataset = [
 
         # "collegeMsg/", 
     
-        # "bmc/",
+         "bmc/",
     
         # "email/",
 
@@ -75,7 +75,7 @@ dataset = [
     
         # "wiki_talk/",
     
-         "stackoverflow/",
+         #"stackoverflow/",
 
         #"orkut/"
     ]
@@ -85,13 +85,13 @@ dataset = [
 ```python
 queryList = {
         # "collegeMsg/":{1: [3], 2: [3,4]},
-   		#"collegeMsg/":{1: [3], 2: [3,4], 3: [4], 4: [4], 5: [4,5], 6: [4,5], 7: [3,4,5]},
-        #"bmc/":{1: [3], 2: [3,4], 3: [4], 4: [4], 5: [4,5], 6: [4,5], 7: [3,4], 8: [5,6]},
+        #"collegeMsg/":{1: [3], 2: [3,4], 3: [4], 4: [4], 5: [4,5], 6: [4,5], 7: [3,4,5]},
+        "bmc/":{1: [3], 2: [3,4], 3: [4], 4: [4], 5: [4,5], 6: [4,5], 7: [3,4], 8: [5,6]},
         #"email/":{1: [3], 2: [3,4], 3: [4], 4: [4], 5: [4,5], 6: [4,5], 7: [3,4], 8: [5]},
         #"askubuntu/":{1: [3], 2: [3,4], 3: [4], 4: [4], 5: [4,5], 6: [4,5], 7: [3,4,5], 8: [5,6]},
         #"superuser/":{1: [3], 2: [3,4], 3: [4], 4: [4], 5: [4,5], 6: [4,5], 8: [5,6]},
        #"wiki_talk/":{1: [3], 2: [3,4], 3: [4], 4: [4]}
-       "stackoverflow/":{1: [3], 2: [3],  4: [4], 5: [5], 6: [5]}
+       #"stackoverflow/":{1: [3], 2: [3],  4: [4], 5: [5], 6: [5]}
         #"orkut/":{1: [3], 2: [3],  4: [4], 5: [5], 6: [5]}
     }
 ```
